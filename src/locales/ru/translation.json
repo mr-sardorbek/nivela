@@ -5,5 +5,27 @@
     "categories": "Категории",
     "about": "О нас",
     "contact": "Контакты"
-  }
+  },
+  "categories": {
+    "electronics": "Электроника",
+    "fashion": "Мода",
+    "beauty": "Красота",
+    "homeLiving": "Дом и быт",
+    "sports": "Спорт",
+    "accessories": "Аксессуары"
+  },
+  "search": {
+    "placeholder": "Поиск товаров..."
+  },
+
+  "account": {
+  "wishlist": "Избранное",
+  "profile": "Профиль"
+},
+
+"announcement": {
+  "shipping": "Бесплатная доставка",
+  "returns": "Возврат в течение 30 дней",
+  "payments": "Безопасные платежи"
+}
 }

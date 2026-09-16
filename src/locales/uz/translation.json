@@ -5,5 +5,29 @@
     "categories": "Kategoriyalar",
     "about": "Biz haqimizda",
     "contact": "Aloqa"
-  }
+  },
+
+  "categories": {
+    "electronics": "Elektronika",
+    "fashion": "Moda",
+    "beauty": "Go‘zallik",
+    "homeLiving": "Uy va turmush",
+    "sports": "Sport",
+    "accessories": "Aksessuarlar"
+  },
+
+  "search": {
+    "placeholder": "Mahsulotlarni qidiring..."
+  },
+
+  "account": {
+  "wishlist": "Sevimlilar",
+  "profile": "Profil"
+},
+
+"announcement": {
+  "shipping": "Bepul yetkazib berish",
+  "returns": "30 kunlik qaytarish",
+  "payments": "Xavfsiz to‘lovlar"
+}
 }

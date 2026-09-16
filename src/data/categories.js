@@ -1,8 +1,8 @@
-  export const categories = [
-  "Electronics",
-  "Fashion",
-  "Beauty",
-  "Home & Living",
-  "Sports",
-  "Accessories",
+export const categories = [
+  { key: "electronics" },
+  { key: "fashion" },
+  { key: "beauty" },
+  { key: "homeLiving" },
+  { key: "sports" },
+  { key: "accessories" },
 ];

@@ -5,5 +5,27 @@
     "categories": "Categories",
     "about": "About",
     "contact": "Contact"
-  }
+  },
+  "categories": {
+    "electronics": "Electronics",
+    "fashion": "Fashion",
+    "beauty": "Beauty",
+    "homeLiving": "Home & Living",
+    "sports": "Sports",
+    "accessories": "Accessories"
+  },
+  "search": {
+    "placeholder": "Search products..."
+  },
+
+  "account": {
+  "wishlist": "Wishlist",
+  "profile": "Profile"
+},
+
+"announcement": {
+  "shipping": "Free Shipping",
+  "returns": "30-Day Returns",
+  "payments": "Secure Payments"
+}
 }

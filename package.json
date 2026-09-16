@@ -16,6 +16,7 @@
     "@tailwindcss/vite": "^4.3.3",
     "class-variance-authority": "^0.7.1",
     "cn": "^0.2.6",
+    "flag-icons": "^7.5.0",
     "i18next": "^26.4.2",
     "lucide-react": "^1.41.0",
     "react": "^19.2.8",
