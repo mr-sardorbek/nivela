@@ -1,2 +1,6 @@
 export {default as Logo} from "./logo.png"
-export {default as MainHeroImg} from "./hero-img.png"
+export {default as FurnitureImg} from "./f-banner.png"
+export {default as FashionImg} from "./style-banners.png"
+export {default as KitchenImg} from "./cook-banner.png"
+export {default as ElectronicsImg} from "./t-banner.png"
+export {default as BeautyImg} from "./c-banner.png"
