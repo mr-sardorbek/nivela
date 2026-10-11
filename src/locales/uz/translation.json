@@ -2,7 +2,10 @@
   "nav": {
     "home": "Bosh sahifa",
     "shop": "Do‘kon",
-    "categories": "Kategoriyalar",
+    "categories": "Barcha kategoriyalar",
+    "newArrivals": "Yangi mahsulotlar",
+    "bestSellers": "Eng ko‘p sotilganlar",
+    "deals": "Chegirmalar",
     "about": "Biz haqimizda",
     "contact": "Aloqa"
   },
@@ -20,10 +23,7 @@
     "placeholder": "Mahsulotlarni qidiring..."
   },
 
-  "account": {
-  "wishlist": "Sevimlilar",
-  "profile": "Profil"
-},
+  
 
 "announcement": {
   "shipping": "Bepul yetkazib berish",

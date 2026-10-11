@@ -1,12 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import {
-  Leaf,
-  RefreshCw,
-  ShieldCheck,
-  Moon,
-  Sun,
-} from "lucide-react";
+import { Leaf, RefreshCw, ShieldCheck, Moon, Sun } from "lucide-react";
 import { Button } from "../ui/button";
 
 const languages = [
@@ -19,16 +13,14 @@ const AnnouncementBar = () => {
   const { t, i18n } = useTranslation();
 
   const [language, setLanguage] = useState(
-    () => localStorage.getItem("language") || "uz"
+    () => localStorage.getItem("language") || "uz",
   );
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
   const [isDark, setIsDark] = useState(
-    () => localStorage.getItem("theme") === "dark"
+    () => localStorage.getItem("theme") === "dark",
   );
 
-  const activeLanguage = languages.find(
-    (lang) => lang.code === language
-  );
+  const activeLanguage = languages.find((lang) => lang.code === language);
 
   const changeLanguage = (lang) => {
     setLanguage(lang);
@@ -50,7 +42,7 @@ const AnnouncementBar = () => {
 
   return (
     <div className="hidden border-b border-[var(--color-surface)] bg-[var(--color-background)] sm:block">
-      <div className="mx-auto flex w-full max-w-[1260px] items-center justify-between gap-4 px-4  sm:px-6 min-[1920px]:max-w-[1460px] min-[1800px]:px-8">
+      <div className="mx-auto flex w-full max-w-[1360px] items-center justify-between gap-4 px-4  sm:px-6 min-[1920px]:max-w-[1460px] min-[1800px]:px-8">
         {/* Service benefits */}
         <div className="flex min-w-0 flex-1 items-center justify-between gap-3 text-[10px] sm:gap-6 sm:text-xs">
           <div className="flex items-center gap-1.5 whitespace-nowrap sm:gap-2">

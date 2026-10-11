@@ -1,8 +1,11 @@
 {
-  "nav": {
+   "nav": {
     "home": "Главная",
     "shop": "Магазин",
     "categories": "Категории",
+    "newArrivals": "Новинки",
+    "bestSellers": "Хиты продаж",
+    "deals": "Скидки",
     "about": "О нас",
     "contact": "Контакты"
   },
@@ -18,10 +21,7 @@
     "placeholder": "Поиск товаров..."
   },
 
-  "account": {
-  "wishlist": "Избранное",
-  "profile": "Профиль"
-},
+
 
 "announcement": {
   "shipping": "Бесплатная доставка",

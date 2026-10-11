@@ -2,8 +2,11 @@
   "nav": {
     "home": "Home",
     "shop": "Shop",
-    "categories": "Categories",
-    "about": "About",
+    "categories": "All Categories",
+    "newArrivals": "New Arrivals",
+    "bestSellers": "Best Sellers",
+    "deals": "Deals",
+    "about": "About Us",
     "contact": "Contact"
   },
   "categories": {
@@ -18,10 +21,7 @@
     "placeholder": "Search products..."
   },
 
-  "account": {
-  "wishlist": "Wishlist",
-  "profile": "Profile"
-},
+  
 
 "announcement": {
   "shipping": "Free Shipping",
