@@ -31,7 +31,7 @@ const Hero = () => {
 
   return (
     <section className="mx-auto max-w-7xl px-3 sm:px-6">
-      <div className="relative aspect-[8/3] overflow-hidden rounded-2xl">
+      <div className="relative aspect-[9/3] overflow-hidden rounded-2xl">
         <AnimatePresence initial={false} mode="sync">
           <motion.img
             key={currentSlide}
