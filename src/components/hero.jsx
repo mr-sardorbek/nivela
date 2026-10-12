@@ -25,12 +25,11 @@ const Hero = () => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % banners.length);
     }, 5000);
-
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section className="mx-auto m-4 max-w-7xl px-3 sm:px-6">
+    <section className="mx-auto m-4 max-w-[1360px] min-[1920px]:max-w-[1460px] min-[1800px]:px-8 px-3 sm:px-6">
       <div className="relative aspect-[9/3] overflow-hidden rounded-2xl">
         <AnimatePresence initial={false} mode="sync">
           <motion.img
