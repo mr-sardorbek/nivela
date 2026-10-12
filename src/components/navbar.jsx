@@ -28,15 +28,17 @@ const Navbar = () => {
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
 
   const [language, setLanguage] = useState(
-    () => localStorage.getItem("language") || "uz"
+    () => localStorage.getItem("language") || "uz",
   );
 
   const [isDark, setIsDark] = useState(
-    () => localStorage.getItem("theme") === "dark"
+    () => localStorage.getItem("theme") === "dark",
   );
 
   const { t, i18n } = useTranslation();
+
   const categoriesRef = useRef(null);
+  const mobileCategoriesRef = useRef(null);
 
   const languages = [
     { code: "uz", flag: "uz", name: "O‘zbekcha" },
@@ -50,10 +52,13 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (
-        categoriesRef.current &&
-        !categoriesRef.current.contains(event.target)
-      ) {
+      const isOutsideDesktop =
+        !categoriesRef.current?.contains(event.target);
+
+      const isOutsideMobile =
+        !mobileCategoriesRef.current?.contains(event.target);
+
+      if (isOutsideDesktop && isOutsideMobile) {
         setIsCategoriesOpen(false);
       }
     };
@@ -167,12 +172,9 @@ const Navbar = () => {
 
           {/* Account, Wishlist, Cart — icons only */}
           <div className="flex shrink-0 items-center justify-end gap-2 xl:gap-3">
-            
-
             <Link
               to="/wishlist"
               aria-label={t("account.wishlist")}
-             
               className="cursor-pointer"
             >
               <Button
@@ -189,7 +191,6 @@ const Navbar = () => {
             <Link
               to="/cart"
               aria-label={t("account.cart")}
-             
               className="cursor-pointer"
             >
               <div className="relative">
@@ -216,7 +217,6 @@ const Navbar = () => {
             <Link
               to="/account"
               aria-label={t("account.profile")}
-              
               className="cursor-pointer"
             >
               <Button
@@ -229,7 +229,6 @@ const Navbar = () => {
                 <User size={32} strokeWidth={1.8} className={iconClass} />
               </Button>
             </Link>
-
           </div>
         </div>
 
@@ -301,14 +300,12 @@ const Navbar = () => {
             <Link
               to="/wishlist"
               className="hidden cursor-pointer sm:block"
-              
             >
               <Button
                 type="button"
                 variant="ghost"
                 size="icon"
                 className={iconButtonClass}
-                
               >
                 <Heart size={27} strokeWidth={1.9} />
               </Button>
@@ -321,7 +318,6 @@ const Navbar = () => {
                   variant="ghost"
                   size="icon"
                   className={iconButtonClass}
-                 
                 >
                   <ShoppingBag size={27} strokeWidth={1.9} />
                 </Button>
@@ -359,8 +355,8 @@ const Navbar = () => {
         {/* Mobile menu */}
         {isMenuOpen && (
           <div className="mt-4 flex flex-col gap-1 border-t border-[var(--color-surface)] pt-4">
-            {/* Categories are always available in the mobile menu */}
-            <div>
+            {/* Categories */}
+            <div ref={mobileCategoriesRef}>
               <Button
                 type="button"
                 variant="ghost"
@@ -420,7 +416,6 @@ const Navbar = () => {
                 className="flex cursor-pointer items-center gap-3 rounded-lg px-3 py-3 text-sm hover:bg-[var(--color-surface)] sm:hidden"
               >
                 <Heart size={24} />
-                
               </Link>
 
               <Link
@@ -429,7 +424,6 @@ const Navbar = () => {
                 className="flex cursor-pointer items-center gap-3 rounded-lg px-3 py-3 text-sm hover:bg-[var(--color-surface)]"
               >
                 <User size={24} />
-                
               </Link>
 
               <Button
@@ -439,7 +433,6 @@ const Navbar = () => {
                 className="w-full cursor-pointer justify-start gap-3"
               >
                 {isDark ? <Sun size={23} /> : <Moon size={23} />}
-              
               </Button>
 
               <div className="relative">
