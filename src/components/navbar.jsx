@@ -97,7 +97,7 @@ const Navbar = () => {
   return (
     <nav className="w-full border-b border-[var(--color-surface)] bg-[var(--color-background)] text-[var(--color-foreground)]">
       {/* Desktop Navbar */}
-      <div className="mx-auto hidden w-full max-w-[1360px] px-4 py-2 sm:px-6 min-[1920px]:max-w-[1360px] min-[1920px]:px-8 lg:block">
+      <div className="mx-auto hidden w-full max-w-[1360px] px-4 py-2 sm:px-6 min-[1920px]:max-w-[1460px] min-[1800px]:px-8 lg:block">
         {/* Top row */}
         <div className="grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-5 xl:gap-7">
           {/* Logo + Categories */}

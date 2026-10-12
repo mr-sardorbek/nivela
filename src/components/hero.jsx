@@ -30,7 +30,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="mx-auto max-w-7xl px-3 sm:px-6">
+    <section className="mx-auto m-4 max-w-7xl px-3 sm:px-6">
       <div className="relative aspect-[9/3] overflow-hidden rounded-2xl">
         <AnimatePresence initial={false} mode="sync">
           <motion.img
