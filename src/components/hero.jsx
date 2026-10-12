@@ -42,7 +42,7 @@ const Hero = () => {
 
   return (
     <section className="mx-auto m-4 w-full  max-w-[1600px] min-[1920px]:max-w-[1600px] min-[1800px]:px-8 px-3 sm:px-6">
-      <div className="relative aspect-[9/3] w-full overflow-hidden rounded-xl sm:rounded-2xl lg:aspect-auto lg:h-[calc(100svh-170px)] min-[1800px]:h-[calc(100svh-180px)]">
+      <div className="relative aspect-[9/3] w-full overflow-hidden rounded-xl sm:rounded-2xl lg:aspect-auto lg:h-[calc(100svh-170px)] min-[1800px]:h-[calc(100svh-240px)]">
         <AnimatePresence initial={false} mode="sync">
           <motion.img
             key={currentSlide}
