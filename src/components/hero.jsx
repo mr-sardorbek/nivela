@@ -41,7 +41,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="mx-auto m-4 w-full max-w-[1360px] min-[1920px]:max-w-[1460px] min-[1800px]:px-8 px-3 sm:px-6">
+    <section className="mx-auto m-4 w-full max-w-[1600px] min-[1920px]:max-w-[1600px] min-[1800px]:px-8 px-3 sm:px-6">
       <div className="relative aspect-[9/3] w-full overflow-hidden rounded-xl sm:rounded-2xl lg:aspect-auto lg:h-[calc(100svh-170px)] min-[1800px]:h-[calc(100svh-180px)]">
         <AnimatePresence initial={false} mode="sync">
           <motion.img
@@ -66,7 +66,7 @@ const Hero = () => {
           size="icon"
           onClick={previousSlide}
           aria-label="Previous slide"
-          className="absolute left-3 top-1/2 z-10 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 shadow-md hover:bg-white sm:left-4"
+          className="absolute left-3 top-1/2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full bg-white/80 shadow-md hover:bg-white sm:flex sm:left-4"
         >
           <ChevronLeft size={20} />
         </Button>
@@ -78,7 +78,7 @@ const Hero = () => {
           size="icon" 
           onClick={nextSlide}
           aria-label="Next slide"
-          className="absolute right-3 top-1/2 z-10 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 shadow-md hover:bg-white sm:right-4"
+          className="absolute right-3 top-1/2 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full bg-white/80 shadow-md hover:bg-white sm:flex sm:right-4"
         >
           <ChevronRight size={20} />
         </Button>
