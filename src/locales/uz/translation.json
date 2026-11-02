@@ -11,12 +11,22 @@
   },
 
   "categories": {
-    "electronics": "Elektronika",
-    "fashion": "Moda",
-    "beauty": "Go‘zallik",
-    "homeLiving": "Uy va turmush",
-    "sports": "Sport",
-    "accessories": "Aksessuarlar"
+  "electronics": "Elektronika",
+  "fashion": "Kiyim-kechak",
+  "beautyCare": "Go‘zallik va parvarish",
+  "homeLiving": "Uy va yashash",
+  "sports": "Sport",
+  "accessories": "Aksessuarlar",
+  "toysKids": "O‘yinchoqlar va bolalar",
+  "groceries": "Oziq-ovqat",
+  "books": "Kitoblar"
+},
+  "homeCategories": {
+    "eyebrow": "Kashf eting",
+    "title": "Kategoriyalar bo‘yicha xarid",
+    "description": "Kundalik hayot uchun saralangan mahsulotlarni kashf eting.",
+    "viewAll": "Barcha kategoriyalar",
+    "more": "Yana"
   },
 
   "search": {

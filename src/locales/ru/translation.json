@@ -10,13 +10,24 @@
     "contact": "Контакты"
   },
   "categories": {
-    "electronics": "Электроника",
-    "fashion": "Мода",
-    "beauty": "Красота",
-    "homeLiving": "Дом и быт",
-    "sports": "Спорт",
-    "accessories": "Аксессуары"
+  "electronics": "Электроника",
+  "fashion": "Одежда",
+  "beautyCare": "Красота и уход",
+  "homeLiving": "Дом и интерьер",
+  "sports": "Спорт",
+  "accessories": "Аксессуары",
+  "toysKids": "Игрушки и товары для детей",
+  "groceries": "Продукты",
+  "books": "Книги"
+},
+  "homeCategories": {
+    "eyebrow": "Подборки",
+    "title": "Покупки по категориям",
+    "description": "Откройте для себя подборки товаров на каждый день.",
+    "viewAll": "Все категории",
+    "more": "Ещё"
   },
+  
   "search": {
     "placeholder": "Поиск товаров..."
   },

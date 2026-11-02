@@ -10,13 +10,24 @@
     "contact": "Contact"
   },
   "categories": {
-    "electronics": "Electronics",
-    "fashion": "Fashion",
-    "beauty": "Beauty",
-    "homeLiving": "Home & Living",
-    "sports": "Sports",
-    "accessories": "Accessories"
+  "electronics": "Electronics",
+  "fashion": "Fashion",
+  "beautyCare": "Beauty & Care",
+  "homeLiving": "Home & Living",
+  "sports": "Sports",
+  "accessories": "Accessories",
+  "toysKids": "Toys & Kids",
+  "groceries": "Groceries",
+  "books": "Books"
+},
+  "homeCategories": {
+    "eyebrow": "Explore",
+    "title": "Shop by Category",
+    "description": "Explore our handpicked categories for everyday life.",
+    "viewAll": "View All Categories",
+    "more": "More"
   },
+  
   "search": {
     "placeholder": "Search products..."
   },
