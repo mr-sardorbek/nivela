@@ -42,7 +42,7 @@ const AnnouncementBar = () => {
 
   return (
     <div className="hidden border-b border-[var(--color-surface)] bg-[var(--color-background)] sm:block">
-      <div className="mx-auto flex w-full max-w-[1360px] items-center justify-between gap-4 px-4  sm:px-6 min-[1920px]:max-w-[1460px] min-[1800px]:px-8">
+      <div className="site-container flex items-center justify-between gap-4">
         {/* Service benefits */}
         <div className="flex min-w-0 flex-1 items-center justify-between gap-3 text-[10px] sm:gap-6 sm:text-xs">
           <div className="flex items-center gap-1.5 whitespace-nowrap sm:gap-2">

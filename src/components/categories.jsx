@@ -1,11 +1,11 @@
-import { ArrowRight, Ellipsis } from "lucide-react";
+import { Ellipsis } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { HomeCategories } from "@/data/homeCategories";
 
 const cardClass =
   "group flex min-w-0 flex-col items-center gap-1.5 rounded-lg " +
-  "bg-[#f8f6f2] px-1 py-2 text-center text-xs font-medium " +
+  "bg-[#f8f6f2] px-1 py-2 text-center text-[8px] font-medium " +
   "transition-colors hover:bg-[#eeece4] dark:bg-muted dark:hover:bg-accent " +
   "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary " +
   "sm:gap-2 sm:rounded-xl sm:p-3 sm:text-sm";
@@ -16,13 +16,13 @@ const Categories = () => {
   return (
     <section
       aria-labelledby="home-categories-title"
-      className="mx-auto w-full max-w-[1600px] px-3 py-6 sm:px-6 sm:py-8 min-[1800px]:px-8"
+  className="site-container py-6 sm:py-8"
     >
       <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between sm:gap-6">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">
-            {t("homeCategories.eyebrow")}
-          </p>
+         <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#4b6038] dark:text-[#afc798]">
+  {t("homeCategories.eyebrow")}
+</p>
 
           <h2
             id="home-categories-title"
@@ -35,14 +35,6 @@ const Categories = () => {
             {t("homeCategories.description")}
           </p>
         </div>
-
-        <Link
-          to="/shop"
-          className="inline-flex min-h-11 shrink-0 items-center gap-2 self-start text-sm font-medium text-primary hover:underline sm:self-end"
-        >
-          {t("homeCategories.viewAll")}
-          <ArrowRight size={16} aria-hidden="true" />
-        </Link>
       </div>
 
       <div className="grid grid-cols-5 gap-1.5 sm:gap-3 xl:grid-cols-10">
@@ -56,7 +48,7 @@ const Categories = () => {
               src={image}
               alt=""
               loading="lazy"
-              className="aspect-square w-full max-w-24 object-contain motion-safe:transition-transform motion-safe:group-hover:scale-105"
+              className="aspect-square w-full max-w-24 rounded-2xl object-contain motion-safe:transition-transform motion-safe:group-hover:scale-105"
             />
 
             <span className="w-full [overflow-wrap:anywhere] leading-tight">

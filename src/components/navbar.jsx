@@ -100,9 +100,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full border-b border-[var(--color-surface)] bg-[var(--color-background)] text-[var(--color-foreground)]">
+    <nav 
+    className="w-full border-b border-[var(--color-surface)] bg-[var(--color-background)] 
+    text-[var(--color-foreground)] ">
       {/* Desktop Navbar */}
-      <div className="mx-auto hidden w-full max-w-[1360px] px-4 py-2 sm:px-6 min-[1920px]:max-w-[1460px] min-[1800px]:px-8 lg:block">
+      <div className="site-container hidden py-2 lg:block">
         {/* Top row */}
         <div className="grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-5 xl:gap-7">
           {/* Logo + Categories */}
@@ -255,7 +257,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile and tablet Navbar */}
-      <div className="mx-auto w-full max-w-[1260px] px-4 py-3 sm:px-6 min-[1800px]:max-w-[1360px] min-[1800px]:px-8 lg:hidden">
+      <div className="site-container py-3 lg:hidden">
         {/* Main row */}
         <div className="flex items-center justify-between gap-3">
           <div className="flex min-w-0 items-center gap-2">
