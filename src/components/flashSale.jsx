@@ -1,63 +1,90 @@
-import { ArrowRight, Zap } from "lucide-react"
-import { Button } from "./ui/button"
+import { ArrowRight, Zap } from "lucide-react";
+import { Button } from "./ui/button";
+import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 
 const FlashSale = () => {
+
+  const {t} = useTranslation()
   return (
-    <section className="bg-[#FFF1F1] py-5">
-  <div className="site-container">
-    <div className="flex items-center justify-between gap-6">
-      {/* Chap tomon */}
-      
-<div>
-  <div className="flex items-center gap-2">
-    <Zap className="text-red-500 fill-red-500" size={36} />
-    <h2 className="font-serif text-[42px] font-bold leading-tight text-red-500">
-  Flash Sale
-</h2>
-  </div>
+  
+        <div className="flex items-center justify-between gap-6">
+          {/* Chap tomon */}
 
-  <p className="text-xl text-red-500">
-  Limited time. Great prices!
-</p>
-</div>
-
-      <div className="flex items-center gap-2">
-          <div className="flex h-[80px] w-[80px] flex-col items-center justify-center rounded-xl bg-[#FCE4E6]">
-            <span className="text-2xl font-bold text-[#991B1B]">02</span>
-            <span className="text-sm font-medium text-[#991B1B]">Days</span>
-          </div>
-           
-          <div className="flex h-[80px] w-[80px] flex-col items-center justify-center rounded-xl bg-[#FCE4E6]">
-            <span className="text-2xl font-bold text-[#991B1B]">12</span>
-            <span className="text-sm font-medium text-[#991B1B]">Hours</span>
-          </div>
-           
-          <div className="flex h-[80px] w-[80px] flex-col items-center justify-center rounded-xl bg-[#FCE4E6]">
-            <span className="text-2xl font-bold text-[#991B1B]">45</span>
-            <span className="text-sm font-medium text-[#991B1B]">Minutes</span>
-          </div>
-             
-          <div className="flex h-[80px] w-[80px] flex-col items-center justify-center rounded-xl bg-[#FCE4E6]">
-            <span className="text-2xl font-bold text-[#991B1B]">30</span>
-            <span className="text-sm font-medium text-[#991B1B]">Seconds</span>
-          </div>
-      </div>
-
-      <div>
-  <Button
-  variant="ghost"
-  className="h-16 rounded-2xl bg-white px-7 text-base font-bold text-[#222222] shadow-sm hover:bg-white cursor-pointer"
+          <div className="flex items-center gap-3">
+            <motion.div
+  animate={{
+    scale: [1, 1.12, 1],
+    opacity: [1, 0.65, 1],
+  }}
+  transition={{
+    duration: 1.5,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
 >
-  View All Deals
-  <ArrowRight className="ml-1 text-primary/70" size={32} />
-</Button>
-</div>
+  <Zap className="text-red-500 fill-red-500" size={74} />
+</motion.div>
 
-    </div>
-  </div>
-</section>
-  )
-}
+            <div className="">
+              <h2 className="font-serif text-[42px] font-bold leading-tight text-red-500">
+  {t("flashSale.title")}
+</h2>
+              <p className="text-xl text-red-500">
+  {t("flashSale.subtitle")}
+</p>
+            </div>
+          </div>
 
-export default FlashSale
+          <div className="flex items-center gap-2">
+            <div className="flex h-[80px] w-[80px] flex-col items-center justify-center rounded-xl bg-[#FCE4E6]">
+              <span className="text-2xl font-bold text-[#991B1B]">02</span>
+              <span className="text-sm font-medium text-[#991B1B]">{t("flashSale.days")}</span>
+            </div>
+
+            <div className="flex h-[80px] w-[80px] flex-col items-center justify-center rounded-xl bg-[#FCE4E6]">
+              <span className="text-2xl font-bold text-[#991B1B]">12</span>
+              <span className="text-sm font-medium text-[#991B1B]">{t("flashSale.hours")}</span>
+            </div>
+
+            <div className="flex h-[80px] w-[80px] flex-col items-center justify-center rounded-xl bg-[#FCE4E6]">
+              <span className="text-2xl font-bold text-[#991B1B]">45</span>
+              <span className="text-sm font-medium text-[#991B1B]">
+                {t("flashSale.minutes")}
+              </span>
+            </div>
+
+            <div className="flex h-[80px] w-[80px] flex-col items-center justify-center rounded-xl bg-[#FCE4E6]">
+              <span className="text-2xl font-bold text-[#991B1B]">30</span>
+              <span className="text-sm font-medium text-[#991B1B]">
+                {t("flashSale.seconds")}
+              </span>
+            </div>
+          </div>
+
+          <div>
+            <Button
+              variant="secondary"
+              className="h-10 group rounded-2xl  px-7 text-[14px] font-bold  
+               cursor-pointer transition-all duration-300 ease-out
+"
+            >
+             {t("flashSale.viewAll")}
+              <motion.div
+                animate={{ x: [0, 5, 0] }}
+                transition={{
+                  duration: 1.2,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              >
+                <ArrowRight className="ml-1 size-5 text-primary-dark" />
+              </motion.div>
+            </Button>
+          </div>
+        </div>
+  );
+};
+
+export default FlashSale;

@@ -11,16 +11,16 @@
   },
 
   "categories": {
-  "electronics": "Elektronika",
-  "fashion": "Kiyim-kechak",
-  "beautyCare": "Go‘zallik va parvarish",
-  "homeLiving": "Uy va yashash",
-  "sports": "Sport",
-  "accessories": "Aksessuarlar",
-  "toysKids": "O‘yinchoqlar va bolalar",
-  "groceries": "Oziq-ovqat",
-  "books": "Kitoblar"
-},
+    "electronics": "Elektronika",
+    "fashion": "Kiyim-kechak",
+    "beautyCare": "Go‘zallik va parvarish",
+    "homeLiving": "Uy va yashash",
+    "sports": "Sport",
+    "accessories": "Aksessuarlar",
+    "toysKids": "O‘yinchoqlar va bolalar",
+    "groceries": "Oziq-ovqat",
+    "books": "Kitoblar"
+  },
   "homeCategories": {
     "eyebrow": "Kashf eting",
     "title": "Kategoriyalar bo‘yicha xarid",
@@ -33,11 +33,19 @@
     "placeholder": "Mahsulotlarni qidiring..."
   },
 
-  
+  "announcement": {
+    "shipping": "Bepul yetkazib berish",
+    "returns": "30 kunlik qaytarish",
+    "payments": "Xavfsiz to‘lovlar"
+  },
 
-"announcement": {
-  "shipping": "Bepul yetkazib berish",
-  "returns": "30 kunlik qaytarish",
-  "payments": "Xavfsiz to‘lovlar"
-}
+  "flashSale": {
+    "title": "Tezkor chegirmalar",
+    "subtitle": "Cheklangan vaqt. Ajoyib narxlar!",
+    "days": "Kun",
+    "hours": "Soat",
+    "minutes": "Daqiqa",
+    "seconds": "Soniya",
+    "viewAll": "Barcha takliflarni ko‘rish"
+  }
 }

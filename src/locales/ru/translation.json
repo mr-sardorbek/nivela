@@ -1,5 +1,5 @@
 {
-   "nav": {
+  "nav": {
     "home": "Главная",
     "shop": "Магазин",
     "categories": "Категории",
@@ -10,16 +10,16 @@
     "contact": "Контакты"
   },
   "categories": {
-  "electronics": "Электроника",
-  "fashion": "Одежда",
-  "beautyCare": "Красота и уход",
-  "homeLiving": "Дом и интерьер",
-  "sports": "Спорт",
-  "accessories": "Аксессуары",
-  "toysKids": "Игрушки и товары для детей",
-  "groceries": "Продукты",
-  "books": "Книги"
-},
+    "electronics": "Электроника",
+    "fashion": "Одежда",
+    "beautyCare": "Красота и уход",
+    "homeLiving": "Дом и интерьер",
+    "sports": "Спорт",
+    "accessories": "Аксессуары",
+    "toysKids": "Игрушки и товары для детей",
+    "groceries": "Продукты",
+    "books": "Книги"
+  },
   "homeCategories": {
     "eyebrow": "Подборки",
     "title": "Покупки по категориям",
@@ -27,16 +27,24 @@
     "viewAll": "Все категории",
     "more": "Ещё"
   },
-  
+
   "search": {
     "placeholder": "Поиск товаров..."
   },
 
+  "announcement": {
+    "shipping": "Бесплатная доставка",
+    "returns": "Возврат в течение 30 дней",
+    "payments": "Безопасные платежи"
+  },
 
-
-"announcement": {
-  "shipping": "Бесплатная доставка",
-  "returns": "Возврат в течение 30 дней",
-  "payments": "Безопасные платежи"
-}
+  "flashSale": {
+    "title": "Горячие скидки",
+    "subtitle": "Время ограничено. Отличные цены!",
+    "days": "Дней",
+    "hours": "Часов",
+    "minutes": "Минут",
+    "seconds": "Секунд",
+    "viewAll": "Смотреть все предложения"
+  }
 }
