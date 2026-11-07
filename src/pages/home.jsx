@@ -1,70 +1,21 @@
-import { Toys } from "@/assets";
+
 import { Categories, FlashSale, Hero, ProductCard } from "@/components"
+import { useGetProductsQuery } from "@/features/products/productsAPI";
 
 
 const Home = () => {
 
-  const products = [
-    {
-  id: 1,
-  title: "Premium Wireless Headphones",
-  description: "High-quality sound with comfortable wireless design.",
-  img: Toys,
-  price: 89.99,
-  oldPrice: 129.99,
-  discount: 30,
-  rating: 4.8,
-  reviewsCount: 120,
-},
+  const {data , isLoading, error} = useGetProductsQuery()
 
-{
-  id: 2,
-  title: "Premium Wireless Headphones",
-  description: "High-quality sound with comfortable wireless design.",
-  img: Toys,
-  price: 89.99,
-  oldPrice: 129.99,
-  discount: 30,
-  rating: 4.8,
-  reviewsCount: 120,
-},
+  const uniqueProducts = data?.products?.filter(
+    (product, index, array) => 
+      array.findIndex((item) => item.category === product.category) === index
+  ).slice(10, 15) 
 
-{
-  id: 3,
-  title: "Premium Wireless Headphones",
-  description: "High-quality sound with comfortable wireless design.",
-  img: Toys,
-  price: 89.99,
-  oldPrice: 129.99,
-  discount: 30,
-  rating: 4.8,
-  reviewsCount: 120,
-},
+  console.log(data)
+  console.log(isLoading)
+  console.log(error)
 
-{
-  id: 4,
-  title: "Premium Wireless Headphones",
-  description: "High-quality sound with comfortable wireless design.",
-  img: Toys,
-  price: 89.99,
-  oldPrice: 129.99,
-  discount: 30,
-  rating: 4.8,
-  reviewsCount: 120,
-},
-
-{
-  id: 5,
-  title: "Premium Wireless Headphones",
-  description: "High-quality sound with comfortable wireless design.",
-  img: Toys,
-  price: 89.99,
-  oldPrice: 129.99,
-  discount: 30,
-  rating: 4.8,
-  reviewsCount: 120,
-}
-  ]
 
   return (
     <div>
@@ -75,7 +26,7 @@ const Home = () => {
     <FlashSale />
 
     <div className="mt-4 grid grid-cols-5 gap-4">
-      {products.map((product) => (
+      {uniqueProducts?.map((product) => (
         <ProductCard key={product.id} product={product} />
       ))}
     </div>

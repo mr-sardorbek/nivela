@@ -9,7 +9,7 @@ const ProductCard = ({product}) => {
     transition-shadow duration-300 hover:shadow-md ">
         <span className="absolute -left-7 top-4 z-10 w-28 -rotate-45 bg-red-500 py-1 text-center text-[10px] 
         font-bold uppercase tracking-wider text-white shadow-sm">
-  -{product.discount} SALE
+  -{Math.round(product.discountPercentage)}%  SALE
 </span>
       <div className="relative mb-2 h-[160px]  overflow-hidden rounded-xl bg-[#F7F5EF]">
 
@@ -18,7 +18,7 @@ const ProductCard = ({product}) => {
         </button>
 
         <img
-          src={product.img}
+          src={product.thumbnail}
           alt="Product"
           className="h-full w-full object-contain"
         />
@@ -36,7 +36,7 @@ const ProductCard = ({product}) => {
         <div className="mt-2 flex items-center gap-1.5">
           <Star size={16} className="fill-yellow-400 text-yellow-400" />
           <span className="text-sm font-semibold text-[#222222]">{product.rating}</span>
-          <span className="text-sm text-gray-400">({product.reviewsCount})</span>
+          <span className="text-sm text-gray-400">({product.reviews.length})</span>
         </div>
 
         <div className=" flex items-center justify-between">
