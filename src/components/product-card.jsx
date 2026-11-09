@@ -4,6 +4,10 @@ import { Heart, ShoppingCart, Star } from "lucide-react";
 import { Button } from "./ui/button";
 
 const ProductCard = ({product}) => {
+
+  const oldPrice = (
+  product.price / (1 - product.discountPercentage / 100)
+).toFixed(2);
   return (
     <div className="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white p-2 shadow-sm 
     transition-shadow duration-300 hover:shadow-md ">
@@ -41,12 +45,12 @@ const ProductCard = ({product}) => {
 
         <div className=" flex items-center justify-between">
   <div className="flex items-center gap-2">
-    <span className="text-xl font-bold text-primary-dark">
+    <span className="text-xl font-bold text-primary">
       ${product.price}
     </span>
 
-    <span className="text-sm text-gray-400 line-through">
-      {product.oldPrice}
+    <span className="text-[12px] text-gray-400 line-through">
+      ${oldPrice}
     </span>
   </div>
 
