@@ -23,7 +23,7 @@ const Home = () => {
         <div className="rounded-2xl bg-[#FFF1F1] p-4">
           <FlashSale />
 
-          <div className="mt-4 grid grid-cols-5 gap-4">
+         <div className="mt-4 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-5 sm:gap-4">
             {uniqueProducts?.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
