@@ -46,5 +46,14 @@
     "minutes": "Минут",
     "seconds": "Секунд",
     "viewAll": "Смотреть все предложения"
+  },
+
+  "promotionalBanners": {
+    "sustainableTitle": "Устойчивый образ жизни",
+    "sustainableDescription": "Откройте для себя экологичный и осознанный образ жизни.",
+    "freshTitle": "Новые образы",
+    "freshDescription": "Обновите свой повседневный стиль с новыми моделями.",
+    "shopNow": "К покупкам"
   }
+
 }

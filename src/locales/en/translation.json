@@ -46,5 +46,15 @@
     "minutes": "Minutes",
     "seconds": "Seconds",
     "viewAll": "View All Deals"
+  },
+
+  
+  "promotionalBanners": {
+    "sustainableTitle": "Sustainable Living",
+    "sustainableDescription": "Discover a more sustainable way of living.",
+    "freshTitle": "Fresh Looks",
+    "freshDescription": "Explore the latest styles and refresh your everyday look.",
+    "shopNow": "Shop Now"
   }
+
 }

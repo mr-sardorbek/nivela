@@ -47,5 +47,13 @@
     "minutes": "Daqiqa",
     "seconds": "Soniya",
     "viewAll": "Barcha takliflarni ko‘rish"
+  },
+
+  "promotionalBanners": {
+    "sustainableTitle": "Barqaror hayot tarzi",
+    "sustainableDescription": "Tabiatga mos va ongli hayot tarzini kashf eting.",
+    "freshTitle": "Yangi uslublar",
+    "freshDescription": "Eng so‘nggi modellar bilan kundalik uslubingizni yangilang.",
+    "shopNow": "Xarid qilish"
   }
 }
