@@ -2,3 +2,4 @@
  export { default  as Categories} from "./categories.jsx"
  export { default  as FlashSale} from "./flashSale.jsx"
  export { default  as ProductCard} from "./product-card.jsx"
+ export { default  as PromotionalBanner} from "./promotional-banner.jsx"

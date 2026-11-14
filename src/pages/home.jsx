@@ -1,4 +1,4 @@
-import { Categories, FlashSale, Hero, ProductCard } from "@/components";
+import { Categories, FlashSale, Hero, ProductCard, PromotionalBanner } from "@/components";
 import { useGetProductsQuery } from "@/features/products/productsAPI";
 
 const Home = () => {
@@ -20,7 +20,7 @@ const Home = () => {
       <Hero />
       <Categories />
       <div className="site-container">
-        <div className="rounded-2xl bg-[#FFF1F1] p-4">
+        <div className="rounded-2xl bg-[#fce5e5] p-4">
           <FlashSale />
 
          <div className="mt-4 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-5 sm:gap-4">
@@ -30,6 +30,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <PromotionalBanner />
     </div>
   );
 };
