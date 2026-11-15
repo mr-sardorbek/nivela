@@ -79,6 +79,13 @@
   "premiumQualityDescription": "Тщательно отобрано",
   "support": "Поддержка 24/7",
   "supportDescription": "Всегда готовы помочь"
+},
+
+"newsletter": {
+  "title": "Подпишитесь на нашу рассылку",
+  "description": "Получите скидку 10% на первый заказ и узнавайте первыми о новых поступлениях.",
+  "placeholder": "Введите ваш email...",
+  "subscribe": "Подписаться"
 }
 
 }

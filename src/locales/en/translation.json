@@ -80,6 +80,13 @@
   "premiumQualityDescription": "Carefully selected",
   "support": "24/7 Support",
   "supportDescription": "We're here for you"
+},
+
+"newsletter": {
+  "title": "Join Our Newsletter",
+  "description": "Get 10% off your first order and be the first to know about new arrivals.",
+  "placeholder": "Enter your email...",
+  "subscribe": "Subscribe"
 }
 
 }

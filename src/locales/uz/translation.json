@@ -80,5 +80,12 @@
   "premiumQualityDescription": "Sinchiklab tanlangan",
   "support": "24/7 qo‘llab-quvvatlash",
   "supportDescription": "Sizga yordam berishga tayyormiz"
+},
+
+"newsletter": {
+  "title": "Yangiliklarimizga obuna bo‘ling",
+  "description": "Birinchi buyurtmangizga 10% chegirma oling va yangi mahsulotlar haqida birinchilardan bo‘lib xabardor bo‘ling.",
+  "placeholder": "Email manzilingizni kiriting...",
+  "subscribe": "Obuna bo‘lish"
 }
 }
