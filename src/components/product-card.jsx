@@ -2,7 +2,8 @@
 import { Heart, ShoppingCart, Star } from "lucide-react";
 import { Button } from "./ui/button";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product , showSale = true, oldPrices = true}) => {
+
   const oldPrice = (
     product.price / (1 - product.discountPercentage / 100)
   ).toFixed(2);
@@ -11,9 +12,11 @@ const ProductCard = ({ product }) => {
     <div className="group relative min-w-0 overflow-hidden rounded-2xl border border-gray-100 bg-white p-1.5 shadow-sm transition-shadow duration-300 hover:shadow-md sm:p-2">
 
       {/* SALE ribbon */}
-      <span className="absolute -left-7 top-3 z-10 w-24 -rotate-45 bg-red-500 py-1 text-center text-[9px] font-bold uppercase tracking-wider text-white shadow-sm sm:-left-7 sm:top-4 sm:w-28 sm:text-[10px]">
-        -{Math.round(product.discountPercentage)}% SALE
-      </span>
+     {showSale && (
+  <span className="absolute -left-7 top-3 z-10 w-24 -rotate-45 bg-red-500 py-1 text-center text-[9px] font-bold uppercase tracking-wider text-white shadow-sm sm:-left-7 sm:top-4 sm:w-28 sm:text-[10px]">
+    -{Math.round(product.discountPercentage)}% SALE
+  </span>
+)}
 
       {/* Product image */}
       <div className="relative mb-2 h-[105px] overflow-hidden rounded-xl bg-[#F7F5EF] sm:h-[130px] md:h-[145px] lg:h-[160px]">
@@ -61,10 +64,12 @@ const ProductCard = ({ product }) => {
     <span className="whitespace-nowrap text-sm font-bold text-primary sm:text-lg lg:text-xl">
       ${product.price}
     </span>
-
+      
+      {oldPrices && (
     <span className="whitespace-nowrap text-[9px] text-gray-400 line-through sm:text-xs">
       ${oldPrice}
     </span>
+      )}
   </div>
 
   <Button

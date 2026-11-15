@@ -55,6 +55,12 @@
     "freshTitle": "Fresh Looks",
     "freshDescription": "Explore the latest styles and refresh your everyday look.",
     "shopNow": "Shop Now"
-  }
+  },
+
+  "bestSellers": {
+  "title": "Best Sellers",
+  "description": "Our most popular products.",
+  "seeAll": "See All"
+}
 
 }

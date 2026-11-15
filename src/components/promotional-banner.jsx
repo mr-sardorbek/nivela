@@ -9,7 +9,7 @@ const PromotionalBanner = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="mt-8 mb-8">
+    <section className="mt-12 ">
       <div className="site-container">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <div className="relative">

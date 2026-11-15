@@ -55,5 +55,11 @@
     "freshTitle": "Yangi uslublar",
     "freshDescription": "Eng so‘nggi modellar bilan kundalik uslubingizni yangilang.",
     "shopNow": "Xarid qilish"
-  }
+  },
+
+  "bestSellers": {
+  "title": "Eng ko‘p sotilganlar",
+  "description": "Xaridorlarimiz eng ko‘p tanlagan mahsulotlar.",
+  "seeAll": "Barchasini ko‘rish"
+}
 }

@@ -1,4 +1,4 @@
-import { Categories, FlashSale, Hero, ProductCard, PromotionalBanner } from "@/components";
+import { BestSeller, Categories, FlashSale, Hero, ProductCard, PromotionalBanner } from "@/components";
 import { useGetProductsQuery } from "@/features/products/productsAPI";
 
 const Home = () => {
@@ -32,6 +32,7 @@ const Home = () => {
       </div>
 
       <PromotionalBanner />
+      <BestSeller />
     </div>
   );
 };

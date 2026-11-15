@@ -3,3 +3,4 @@
  export { default  as FlashSale} from "./flashSale.jsx"
  export { default  as ProductCard} from "./product-card.jsx"
  export { default  as PromotionalBanner} from "./promotional-banner.jsx"
+ export { default  as BestSeller} from "./bestSeller.jsx"
