@@ -60,6 +60,25 @@
   "title": "Лидеры продаж",
   "description": "Самые популярные товары среди наших покупателей.",
   "seeAll": "Смотреть все"
+},
+
+"newArrivals": {
+  "title": "Новинки",
+  "description": "Откройте для себя последние поступления нашей коллекции.",
+  "seeAll": "Смотреть все"
+},
+
+"features": {
+  "freeShipping": "Бесплатная доставка",
+  "freeShippingDescription": "При заказе от $50",
+  "returns": "Возврат в течение 30 дней",
+  "returnsDescription": "Без лишних хлопот",
+  "securePayments": "Безопасные платежи",
+  "securePaymentsDescription": "100% безопасность",
+  "premiumQuality": "Премиальное качество",
+  "premiumQualityDescription": "Тщательно отобрано",
+  "support": "Поддержка 24/7",
+  "supportDescription": "Всегда готовы помочь"
 }
 
 }

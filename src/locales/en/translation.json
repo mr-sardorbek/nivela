@@ -61,6 +61,25 @@
   "title": "Best Sellers",
   "description": "Our most popular products.",
   "seeAll": "See All"
+},
+
+"newArrivals": {
+  "title": "New Arrivals",
+  "description": "Discover the latest additions to our collection.",
+  "seeAll": "See All"
+},
+
+"features": {
+  "freeShipping": "Free Shipping",
+  "freeShippingDescription": "On orders over $50",
+  "returns": "30-Day Returns",
+  "returnsDescription": "Hassle free",
+  "securePayments": "Secure Payments",
+  "securePaymentsDescription": "100% secure",
+  "premiumQuality": "Premium Quality",
+  "premiumQualityDescription": "Carefully selected",
+  "support": "24/7 Support",
+  "supportDescription": "We're here for you"
 }
 
 }

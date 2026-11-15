@@ -2,7 +2,7 @@
 import { Heart, ShoppingCart, Star } from "lucide-react";
 import { Button } from "./ui/button";
 
-const ProductCard = ({ product , showSale = true, oldPrices = true}) => {
+const ProductCard = ({ product , showSale = false, oldPrices = false, showNew = false,}) => {
 
   const oldPrice = (
     product.price / (1 - product.discountPercentage / 100)
@@ -15,6 +15,13 @@ const ProductCard = ({ product , showSale = true, oldPrices = true}) => {
      {showSale && (
   <span className="absolute -left-7 top-3 z-10 w-24 -rotate-45 bg-red-500 py-1 text-center text-[9px] font-bold uppercase tracking-wider text-white shadow-sm sm:-left-7 sm:top-4 sm:w-28 sm:text-[10px]">
     -{Math.round(product.discountPercentage)}% SALE
+  </span>
+)}
+
+{showNew && (
+  <span className="absolute left-4 top-4 z-10 rounded-full border-1 border-[var(--color-primary)]  bg-[#eae6da] px-3 py-1 text-[10px] 
+  font-semibold text-[#5e6936] sm:text-xs">
+    NEW
   </span>
 )}
 

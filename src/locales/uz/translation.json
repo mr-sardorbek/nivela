@@ -61,5 +61,24 @@
   "title": "Eng ko‘p sotilganlar",
   "description": "Xaridorlarimiz eng ko‘p tanlagan mahsulotlar.",
   "seeAll": "Barchasini ko‘rish"
+},
+
+"newArrivals": {
+  "title": "Yangi mahsulotlar",
+  "description": "To‘plamimizga qo‘shilgan eng so‘nggi mahsulotlarni kashf eting.",
+  "seeAll": "Barchasini ko‘rish"
+},
+
+"features": {
+  "freeShipping": "Bepul yetkazib berish",
+  "freeShippingDescription": "$50 dan ortiq buyurtmalarga",
+  "returns": "30 kun ichida qaytarish",
+  "returnsDescription": "Muammosiz qaytarish",
+  "securePayments": "Xavfsiz to‘lovlar",
+  "securePaymentsDescription": "100% xavfsiz",
+  "premiumQuality": "Yuqori sifat",
+  "premiumQualityDescription": "Sinchiklab tanlangan",
+  "support": "24/7 qo‘llab-quvvatlash",
+  "supportDescription": "Sizga yordam berishga tayyormiz"
 }
 }

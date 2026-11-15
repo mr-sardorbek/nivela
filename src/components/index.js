@@ -4,3 +4,8 @@
  export { default  as ProductCard} from "./product-card.jsx"
  export { default  as PromotionalBanner} from "./promotional-banner.jsx"
  export { default  as BestSeller} from "./bestSeller.jsx"
+ export { default  as Loading} from "./loading.jsx"
+ export { default  as ErrorState} from "./error-state.jsx"
+ export { default  as NewArrivlas} from "./new-arrivals.jsx"
+ export { default  as Features} from "./features.jsx"
+ export { default  as NewsLetter} from "./news-letter.jsx"
