@@ -87,6 +87,41 @@
   "description": "Get 10% off your first order and be the first to know about new arrivals.",
   "placeholder": "Enter your email...",
   "subscribe": "Subscribe"
+},
+
+"footer": {
+  "shop": "Shop",
+  "allProducts": "All Products",
+  "newArrivals": "New Arrivals",
+  "bestSellers": "Best Sellers",
+  "deals": "Deals",
+  "giftCards": "Gift Cards",
+
+  "help": "Help",
+  "faq": "FAQ",
+  "shipping": "Shipping & Delivery",
+  "returns": "Returns & Refunds",
+  "trackOrder": "Track Order",
+  "sizeGuide": "Size Guide",
+
+  "company": "Company",
+  "about": "About Us",
+  "philosophy": "Our Philosophy",
+  "blog": "Blog",
+  "careers": "Careers",
+  "contact": "Contact",
+
+  "description": "Discover timeless style and elevate your everyday wardrobe with NIVELA.",
+  "downloadApp": "Download App",
+  "downloadOn": "Download on the",
+  "getItOn": "GET IT ON",
+  "appStore": "App Store",
+  "googlePlay": "Google Play",
+
+  "copyright": "All rights reserved.",
+  "privacy": "Privacy Policy",
+  "terms": "Terms of Service",
+  "cookies": "Cookie Settings"
 }
 
 }

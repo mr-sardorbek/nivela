@@ -87,5 +87,40 @@
   "description": "Birinchi buyurtmangizga 10% chegirma oling va yangi mahsulotlar haqida birinchilardan bo‘lib xabardor bo‘ling.",
   "placeholder": "Email manzilingizni kiriting...",
   "subscribe": "Obuna bo‘lish"
+},
+
+"footer": {
+  "shop": "Do‘kon",
+  "allProducts": "Barcha mahsulotlar",
+  "newArrivals": "Yangi mahsulotlar",
+  "bestSellers": "Eng ko‘p sotilganlar",
+  "deals": "Chegirmalar",
+  "giftCards": "Sovg‘a kartalari",
+
+  "help": "Yordam",
+  "faq": "Ko‘p so‘raladigan savollar",
+  "shipping": "Yetkazib berish",
+  "returns": "Qaytarish va pulni qaytarish",
+  "trackOrder": "Buyurtmani kuzatish",
+  "sizeGuide": "O‘lchamlar qo‘llanmasi",
+
+  "company": "Kompaniya",
+  "about": "Biz haqimizda",
+  "philosophy": "Bizning falsafamiz",
+  "blog": "Blog",
+  "careers": "Karyera",
+  "contact": "Aloqa",
+
+  "description": "NIVELA bilan zamonaviy uslubni kashf eting va kundalik garderobingizni yangilang.",
+  "downloadApp": "Ilovani yuklab oling",
+  "downloadOn": "Yuklab olish",
+  "getItOn": "Yuklab oling",
+  "appStore": "App Store",
+  "googlePlay": "Google Play",
+
+  "copyright": "Barcha huquqlar himoyalangan.",
+  "privacy": "Maxfiylik siyosati",
+  "terms": "Foydalanish shartlari",
+  "cookies": "Cookie sozlamalari"
 }
 }

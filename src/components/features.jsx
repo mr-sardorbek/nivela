@@ -35,7 +35,7 @@ const Features = () => {
 ];
 
   return (
-    <section className="mt-8 bg-[var(--color-surface)] py-6">
+    <section className="mt-12 bg-[var(--color-surface)] py-6">
       <div className="site-container">
       <div className="mx-auto flex w-full max-w-[1200px] flex-wrap justify-center gap-x-6 gap-y-6 lg:gap-x-8">
           {features.map((feature) => {
