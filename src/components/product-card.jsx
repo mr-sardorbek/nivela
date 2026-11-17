@@ -1,8 +1,11 @@
 
 import { Heart, ShoppingCart, Star } from "lucide-react";
 import { Button } from "./ui/button";
+import { useTranslation } from "react-i18next";
 
 const ProductCard = ({ product , showSale = false, oldPrices = false, showNew = false,}) => {
+
+  const {t} = useTranslation()
 
   const oldPrice = (
     product.price / (1 - product.discountPercentage / 100)
@@ -19,10 +22,10 @@ const ProductCard = ({ product , showSale = false, oldPrices = false, showNew = 
 )}
 
 {showNew && (
-  <span className="absolute left-4 top-4 z-10 rounded-full border-1 border-[var(--color-primary)]  bg-[#eae6da] px-3 py-1 text-[10px] 
-  font-semibold text-[#5e6936] sm:text-xs">
-    NEW
-  </span>
+  <span className="absolute left-4 top-4 z-10  rounded-full border border-background bg-primary px-2 py-[2px] text-[10px] 
+  font-semibold text-background ">
+  {t("newArrivals.new")}
+</span>
 )}
 
       {/* Product image */}

@@ -9,3 +9,4 @@
  export { default  as NewArrivlas} from "./new-arrivals.jsx"
  export { default  as Features} from "./features.jsx"
  export { default  as NewsLetter} from "./news-letter.jsx"
+ export { default  as BackToTop} from "./back-to-top.jsx"

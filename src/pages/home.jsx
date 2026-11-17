@@ -1,4 +1,4 @@
-import { BestSeller, Categories, Features, FlashSale, Hero, NewArrivlas, NewsLetter, ProductCard, PromotionalBanner } from "@/components";
+import { BackToTop, BestSeller, Categories, Features, FlashSale, Hero, NewArrivlas, NewsLetter, ProductCard, PromotionalBanner } from "@/components";
 import { useGetProductsQuery } from "@/features/products/productsAPI";
 
 const Home = () => {
@@ -25,7 +25,7 @@ const Home = () => {
 
          <div className="mt-4 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-5 sm:gap-4">
             {uniqueProducts?.map((product) => (
-              <ProductCard key={product.id} product={product} showSale={true}/>
+              <ProductCard key={product.id} product={product} showSale={true} oldPrices={true}/>
             ))}
           </div>
         </div>
@@ -36,6 +36,7 @@ const Home = () => {
       <NewArrivlas />
       <Features />
       <NewsLetter />
+      <BackToTop />
     </div>
   );
 };
