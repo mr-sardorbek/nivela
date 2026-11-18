@@ -1,4 +1,8 @@
+import { ErrorState, Loading, ProductCard } from "@/components";
 import { Button } from "@/components/ui/button";
+import { Slider } from "@/components/ui/slider";
+import { useGetProductsQuery } from "@/features/products/productsAPI";
+
 import { ChevronRight } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -14,8 +18,25 @@ const Shop = () => {
   ];
 
 
-  const [activeCategory, setActiveCategory] = useState("Skin Care")
+  const { data, isLoading, isError } = useGetProductsQuery()
 
+const products = data?.products || [];
+
+console.log(products)
+
+
+  const [activeCategory, setActiveCategory] = useState("Skin Care")
+  const [priceRange, setPriceRange] = useState([0,100])
+
+
+
+   if (isLoading) {
+    return <Loading />;
+  }
+  
+  if (isError) {
+    return <ErrorState />;
+  }
 
   return (
     <main className="site-container">
@@ -68,12 +89,34 @@ const Shop = () => {
     <h3 className="text-sm font-medium text-foreground">
       Price
     </h3>
+
+    <Slider 
+    value={priceRange} onValueChange={setPriceRange} min={0} max={100} step={1} className={`mt-4`}
+    />
+
+    <div className="mt-3 flex items-center justify-between text-xs text-muted-foreground">
+      <span>${priceRange[0]}</span>
+      <span>${priceRange[1]}</span>
+    </div>
   </div>
+
+
 </div>
         </aside>
 
         {/* Products */}
-        <section className="min-w-0 flex-1">Products</section>
+        <section className="min-w-0 flex-1">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 sm:gap-4">
+  {products.map((product) => (
+    <ProductCard
+      key={product.id}
+      product={product}
+      showSale={true}
+      oldPrices={true}
+    />
+  ))}
+</div>
+        </section>
       </div>
     </main>
   );
